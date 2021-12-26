@@ -1,0 +1,19 @@
+{
+  "name": "glade",
+  "version": "1.0.0",
+  "description": "Glade x Viu",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gladeapp": "sudo nodemon app.js && exit 1"
+  },
+  "author": "reggie.senal@sg.tribalworldwide.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "johnny-five": "^2.1.0",
+    "nodemon": "^2.0.15",
+    "raspi-io": "^11.0.0"
+  }
+}
