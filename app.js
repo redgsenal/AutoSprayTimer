@@ -126,8 +126,8 @@ board.on("ready", function() {
       tmrled.stop();
       pwrled.off();
       tmrled.off();
-      exec('shutdown now', function(error, stdout, stderr){ callback(stdout); });
-    }, 3000);
+      //exec('shutdown now', function(error, stdout, stderr){ callback(stdout); });
+    }, 10000);
   }
 
   function startRunningTime(){
@@ -182,18 +182,19 @@ board.on("ready", function() {
   // defaults to 500ms (1/2 second)  
   startbtn.on("hold", function() {
     console.log('start button hold...:', offcount);    
-    if (offcount <= 1){
+    if (offcount < 1){
       stopRunningTime();
       console.log('stop here');
     }
-    if (offcount == 3){
+    if (offcount == 1){
       startRunningTime();
     }    
-    if (offcount > 7){
+    if (offcount == 5){
       stopRunningTime();
       shutdown();
-    }
-    offcount++;
+    } else {
+      offcount++;
+    }    
   });
 
   // "up" the button is released
