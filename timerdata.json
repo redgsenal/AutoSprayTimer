@@ -1,17 +1,27 @@
 [
     {
         "relay": 0,
-        "mark": 0.2,
+        "mark": 0.1,
         "triggered": false
     },
     {
         "relay": 1,
-        "mark": 0.4,
+        "mark": 0.3,
         "triggered": false
     },
     {
         "relay": 2,
-        "mark": 0.8,
+        "mark": 0.5,
+        "triggered": false
+    },
+    {
+        "relay": 0,
+        "mark": 0.7,
+        "triggered": false
+    },
+    {
+        "relay": 2,
+        "mark": 0.85,
         "triggered": false
     }    
 ]
