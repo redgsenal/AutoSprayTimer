@@ -123,7 +123,9 @@ board.on("ready", function() {
     setTimeout(function(){
       console.log('powering down...');      
       exec('shutdown now', function(error, stdout, stderr){ callback(stdout); });
-    }, 5000);
+      tmrled.off();
+      pwrled.off();
+    }, 3000);
   }
 
   function startRunningTime(){
