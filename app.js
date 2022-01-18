@@ -100,9 +100,9 @@ board.on("ready", function() {
           trigger.off();
           setTimeout(function(){
             power.off();
-          }, 1000);
+          }, 1500);
         }, 3000);
-      }, 1000);
+      }, 1500);
     }
   }
 
