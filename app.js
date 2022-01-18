@@ -121,13 +121,9 @@ board.on("ready", function() {
     pwrled.blink(100);
     tmrled.blink(100);
     setTimeout(function(){
-      console.log('powering down...');
-      pwrled.stop();
-      tmrled.stop();
-      pwrled.off();
-      tmrled.off();
-      //exec('shutdown now', function(error, stdout, stderr){ callback(stdout); });
-    }, 10000);
+      console.log('powering down...');      
+      exec('shutdown now', function(error, stdout, stderr){ callback(stdout); });
+    }, 5000);
   }
 
   function startRunningTime(){
